@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="content" content="wether site">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="content">
+        <main class="principal">
+            <div class="divPrincipalImg">
+                <img class="imgPrincipal" src="assets/symbols/cloudy.png" alt="cloudy">
+            </div>
+            <div class="textPrincipal">
+                <h1 id="city">City</h1>
+                <p id="p">millimeter</p>
+                <h1 id="temperature">Temperature</h1>
+            </div>
+        </main>
+        <div class="secondaryCities">
+            <h1 class="h1">Cities</h1>
+            <ul id="citiesID">
+                <li id="london" onclick="request('London')">London</li>
+                <li id="london" onclick="request('Irecê')">Irecê</li>
+                <li id="london" onclick="request('Salvador')">Salvador</li>
+                <li id="london" onclick="request('São Paulo')">São Paulo</li>
+            </ul>
+        </div>
+        <div class="thierdCities">
+            <h1 class="h1"></h1>
+        </div>
+    </div>
+    <script src="js/weatherRequest.js"></script>
+</body>
+</html>

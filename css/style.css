@@ -1,0 +1,145 @@
+* {
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(19, 18, 32);
+    color: white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    background-color: rgb(30, 28, 51);
+    margin: 1.2vw;
+    height: 55vh;
+    width: 70vw;
+}
+
+.secondaryCities {
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(30, 28, 51);
+    margin: 1.2vw;
+    height: 55vh;
+    width: 30vw;
+}
+
+.thierdCities {
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(30, 28, 51);
+    margin: 1.2vw;
+    height: 55vh;
+    width: 30vw;
+    flex-direction: column;
+}
+
+.divPrincipalImg {
+    display: flex;
+    align-items: center;
+}
+
+.imgPrincipal {
+    height: 30vh;
+}
+
+.textPrincipal {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.city {
+    justify-self: center;
+}
+
+.secondaryCities {
+    flex-direction: column;
+}
+
+.h1 {
+    margin-left: 25px;
+}
+
+#citiesID {
+    list-style-type: none;
+}
+
+#citiesID li {
+    margin-left: -0.8rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+@media (max-width: 900px) {
+    .principal {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border-radius: 30px;
+        background-color: rgb(30, 28, 51);
+        margin: 4vw;
+        height: 55vh;
+        width: 90vw;
+    }
+
+    .secondaryCities {
+        display: flex;
+        border-radius: 30px;
+        background-color: rgb(30, 28, 51);
+        margin: 1.2vw;
+        height: 40vh;
+        width: 40vw;
+    }
+    
+    .thierdCities {
+        display: flex;
+        border-radius: 30px;
+        background-color: rgb(30, 28, 51);
+        margin: 1.2vw;
+        height: 40vh;
+        width: 40vw;
+    }
+    
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .imgPrincipal {
+        height: 30vh;
+        margin-left: 0;
+    }
+    
+    .divPrincipalImg {
+        height: 20vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textPrincipal {
+        display: flex;
+        align-items: center;
+    }
+
+    #citiesID li {
+        text-align: start;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        font-size: larger;
+    }
+}
